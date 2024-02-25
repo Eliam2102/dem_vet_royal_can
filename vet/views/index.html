@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="app.js" defer></script>
+    
+    <nav>
+        <h1>Zooftware de gestión</h1>
+        <img src="..//styles/imagenes/pngwing.com.png" alt="Logo de la veterinaria" class="logo">
+        <ul>
+            <a href="notFound.html">Clientes</a>
+            <a href="index.html">Registrar Cliente</a>
+            <a href="notFound.html">Admnistrar clientes</a>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div id="bienvenidaSystem">
+        <div class="container">
+            <h2>Bienvenido a nuestra veterinaria</h2>
+            <p>Somos un equipo comprometido con el bienestar de tus mascotas. En nuestra clínica,
+                nos esforzamos por brindar atención de calidad y amorosa para perros, gatos y peces.
+                Ya sea que necesites servicios de baño, corte de pelo o consulta general, estamos aquí para ayudarte.</p>
+            <p>Confía en nosotros para cuidar a tus fieles compañeros. <strong>¡Esperamos verte pronto!</strong></p>
+        </div>
+    </div>
+    
+    <section id="formRegCliente">
+        <form action="registrarCliente" method="post">
+
+            <h3>Propietario</h3>
+
+                <label for="nombre">Nombre cliente:</label>
+                <input type="text" id="nombre" placeholder="Nombre cliente" name="nombre" required>
+            
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Nº de telefóno" name="telefono" required>
+            
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Correo" name="email" required>
+            
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" placeholder="Dirección" name="direccion" required>
+
+                <h3>Mascota</h3>
+                <label for="nombre">Nombre mascota:</label>
+                <input type="text" id="nombre" placeholder="Nombre mascota" name="nombre" required>
+
+                <option for="tipoMas">Tipo mascota:</option>
+                <select name="tipoMascota" id="tipoMascota" required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="peces">Pez</option>
+                </select>
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" placeholder="Raza" name="raza" required>
+
+                <label for="edad">Edad mascota:</label>
+                <input type="number" id="edad" name="edad" step="0.1" placeholder="Edad en años" required>
+                
+                <option value="sexo">Sexo:</option>
+                <input type="radio" id="masculino" name="sexo" value="macho"><label for="masculino">Macho</label><br>
+                <input type="radio" id="femenino" name="sexo" value="hembra"><label for="hembra">Hembra</label><br>
+
+                <label for="Peso">Peso en KG.</label>
+                <input type="number" id="peso" name="peso" step="0.01" placeholder="0.00" required>
+                <span>KG</s>
+                
+                <h3>Servicios</h3>
+                <option value="servicio">Tipo de servicio: </option>
+                <h4>Estética</h4>
+                <input type="radio" id="baño" name="baño"  value="Baño"><label for="baño">     Baño   </label><br>
+                <input type="radio" id="cortePelo" name="corte" value="Corte pelo"><label for="corte">  Corte de pelo </label><br>
+                <h4>Médico</h4>
+                <input type="radio" id="consulta" name="consulta" value="Consulta"><label for="consulta"> Consulta médica </label><br>
+                <input type="radio" id="vacunacion" name="vacunacion" value="Vacunación"><label for="vacunacion">Vacunación</label><br>
+                <input type="radio" name="desparacitación" id="desparacitacion" value="Desparacitación"><label for="desparacitacion">Desparacitación</label><br>
+
+                <input type="submit" value="Registrarse">
+            </form>
+        </form>
+    </section>
+</body>
+<script></script>
+<footer></footer>
+</html>
